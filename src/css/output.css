@@ -534,10 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.pointer-events-auto {
-  pointer-events: auto;
-}
-
 .absolute {
   position: absolute;
 }
@@ -566,18 +562,6 @@ video {
   top: 1.25rem;
 }
 
-.top-2 {
-  top: 0.5rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -598,11 +582,6 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mt-2 {
@@ -697,6 +676,10 @@ video {
   max-width: 56rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -705,34 +688,8 @@ video {
   max-width: 36rem;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .flex-grow {
   flex-grow: 1;
-}
-
-.grow {
-  flex-grow: 1;
-}
-
-@keyframes hover {
-  0% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(-8%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-.animate-drone-hover {
-  animation: hover 3s infinite;
 }
 
 @keyframes ping {
@@ -868,6 +825,10 @@ video {
   border-width: 8px;
 }
 
+.border-t-4 {
+  border-top-width: 4px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -889,6 +850,11 @@ video {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-opacity-10 {
@@ -951,10 +917,6 @@ video {
   padding: 2rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -983,11 +945,6 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .py-5 {
@@ -1075,6 +1032,18 @@ video {
 
 .text-opacity-0 {
   --tw-text-opacity: 0;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 
 .opacity-0 {
@@ -1194,18 +1163,9 @@ section {
   .max-md\:order-3 {
     order: 3;
   }
-
-  .max-md\:border-gray-100 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246 / var(--tw-border-opacity));
-  }
 }
 
 @media (min-width: 640px) {
-  .sm\:pointer-events-none {
-    pointer-events: none;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -1389,10 +1349,5 @@ section {
   .\32xl\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .\32xl\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
   }
 }
