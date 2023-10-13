@@ -8,7 +8,7 @@ const Intro = () => {
     <Section
       id="hero"
       padding="py-9 md:py-20 2xl:py-20"
-      gap="gap-12"
+      gap="gap-12 md:flex-row"
       bg="bg-gray-950"
     >
       <Photo picture={introData.picture} bg="border-gray-950"></Photo>
