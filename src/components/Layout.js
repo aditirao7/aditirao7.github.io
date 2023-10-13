@@ -155,12 +155,12 @@ export const WorkCard = (props) => {
   );
 };
 
-export default function useScroll(threshold) {
+export function useScroll() {
   const [scrolled, setScrolled] = useState(false);
 
   const onScroll = useCallback(() => {
-    setScrolled((window.scrollY || window.pageYOffset) > threshold);
-  }, [threshold]);
+    setScrolled(window.scrollY > 80);
+  }, [80]);
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);

@@ -1,11 +1,10 @@
 import * as React from "react";
 import Resume from "../files/Aditi_Rao_Resume.pdf";
-
 import { NavItem, useScroll } from "./Layout";
 import { navData } from "../../data";
 
 const Navigation = () => {
-  var scrolled = useScroll(80);
+  var scrolled = useScroll();
 
   return (
     <div
