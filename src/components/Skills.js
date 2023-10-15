@@ -12,11 +12,12 @@ const About = () => {
     >
       <Title content="Skills"></Title>
       <Grid grid="grid-cols-2 gap-4 gap-y-4 sm:grid-cols-3 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
-        {skillsData.map((obj) => (
+        {skillsData.map((obj, index) => (
           <SkillCard
             logo={obj.logo}
             skill={obj.title}
             src={obj.href}
+            key={`skill-` + index}
           ></SkillCard>
         ))}
       </Grid>

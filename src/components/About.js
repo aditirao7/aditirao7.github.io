@@ -15,8 +15,8 @@ const About = () => {
         <Photo picture={aboutData.picture} bg="border-gray-900"></Photo>
         <div className="text-gray-300 flex max-w-5xl flex-col gap-6">
           <p className="text-2xl font-bold">{aboutData.headline}</p>
-          {aboutData.content.map((obj) => (
-            <p>{obj}</p>
+          {aboutData.content.map((obj, index) => (
+            <p key={`about-` + index}>{obj}</p>
           ))}
         </div>
       </div>

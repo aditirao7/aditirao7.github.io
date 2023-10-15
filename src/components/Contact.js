@@ -14,12 +14,12 @@ const Contact = () => {
       <div className="text-gray-300 text-xl max-w-l mx-auto">
         <p className="justify-center align-center">{contactData.heading}</p>
       </div>
-      <div class="text-gray-300 flex flex-col items-center gap-2 md:gap-4">
-        {contactData.contacts.map((obj) => (
-          <a className={obj.class} href={obj.href}>
-            <div class="flex items-center gap-4 md:gap-5">
+      <div className="text-gray-300 flex flex-col items-center gap-2 md:gap-4">
+        {contactData.contacts.map((obj, index) => (
+          <a key={`contact-` + index} className={obj.class} href={obj.href}>
+            <div className="flex items-center gap-4 md:gap-5">
               <obj.Icon size={40} />
-              <h2 class="text-lg md:text-4xl font-semibold tracking-[-0.02em] ">
+              <h2 className="text-lg md:text-4xl font-semibold tracking-[-0.02em] ">
                 {obj.content}
               </h2>
             </div>

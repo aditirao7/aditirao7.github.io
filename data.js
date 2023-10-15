@@ -207,6 +207,7 @@ export const workData = [
     logo: amazon,
     duration: "Jan 2023 - June 2023",
     href: "https://amazon.com/",
+    company: "Amazon",
     points: [
       "Spearheaded the successful integration of Pix payment method for Amazon subscriptions in Brazil. It will be the main driver for attracting up to 2 million new customers and generating a revenue of around $72 million.",
       "Established and hosted a SonarQube instance using AWS and designed an automation system to integrate analysis into the internal pull request workflow.",
@@ -219,6 +220,7 @@ export const workData = [
     logo: fasthr,
     duration: "June 2022 - Sept 2022",
     href: "https://fasthr.ai/",
+    company: "FastHr.ai",
     points: [
       "Engineered an internal tool utilizing HTML, JQuery, and Google Apps Script. Generated digitally signed invoice PDFs, complete with secure digital signatures, dates, and unique IDs. Streamlined data management by seamlessly updating pertinent information in an Excel sheet.",
       "Drove the backend development of a dynamic Applicant Tracking System (ATS) powered by Node.js, Express, and MongoDB. Contributed to the design and implementation of RESTful APIs and skillfully integrated Sarv's third-party API, enabling seamless communication between recruiters and candidates.",
@@ -261,12 +263,12 @@ export const projectsData = [
     picture: drone,
     round: "rounded-full",
     size: "160",
-    animate: " animate-drone-hover",
+    animate: "transition duration-300 animate-drone-hover",
   },
   {
     title: "Linking Contacts",
     href: "https://github.com/aditirao7/linking-contacts",
-    description: "Identity reconciliation API",
+    description: "Identity Reconciliation API",
     picture: identity,
     round: "rounded-full",
     size: "130",

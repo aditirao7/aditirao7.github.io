@@ -11,15 +11,17 @@ const Work = () => {
       bg="bg-gray-900"
     >
       <Title content="Work Experience"></Title>
-      {workData.map((obj) => (
+      {workData.map((obj, i) => (
         <WorkCard
           title={obj.title}
           logo={obj.logo}
           date={obj.duration}
           link={obj.href}
+          key={`work-` + i}
+          company={obj.company}
         >
-          {obj.points.map((pt) => (
-            <li>{pt}</li>
+          {obj.points.map((pt, j) => (
+            <li key={`work-` + i + `-pt-` + j}>{pt}</li>
           ))}
         </WorkCard>
       ))}

@@ -36,11 +36,13 @@ const Intro = () => {
           </div>
         </div>
         <div className="flex flex-row gap-5">
-          {introData.socials.map((obj) => (
+          {introData.socials.map((obj, index) => (
             <a
               className="relative transition duration-300 hover:scale-125"
               href={obj.href}
               target="_blank"
+              rel="noreferrer"
+              key={`social-` + index}
             >
               <obj.Icon color="white" size={20} />
             </a>

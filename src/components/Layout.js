@@ -32,6 +32,7 @@ export const Photo = (props) => {
           src={props.picture}
           className={`absolute z-10 h-[280px] w-[240px] border-8 max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px] ${props.bg}`}
           style={{ objectFit: "cover" }}
+          alt="Aditi Rao"
         />
       </div>
     </div>
@@ -40,7 +41,7 @@ export const Photo = (props) => {
 
 export const ProjectCard = (props) => {
   return (
-    <a href={props.link} target="_blank">
+    <a href={props.link} rel="noreferrer" target="_blank">
       <div className="relative w-64 h-64 text-gray-300 bg-zinc-900 rounded-xl flex flex-col border border-gray-500 border-opacity-10 hover:bg-zinc-800 gap-1 group p-2">
         <div
           className="absolute top-5 right-5
@@ -65,6 +66,7 @@ export const ProjectCard = (props) => {
           src={props.pic}
           width={props.size}
           height={props.size}
+          alt={props.title}
         />
       </div>
     </a>
@@ -93,7 +95,7 @@ export const Section = (props) => {
 
 export const SkillCard = (props) => {
   return (
-    <a href={props.src} target="_blank">
+    <a rel="noreferrer" href={props.src} target="_blank">
       <div className="relative md:w-28 md:h-28 w-32 h-32 text-gray-300 bg-zinc-900 rounded-xl flex flex-col border border-gray-500 border-opacity-10 hover:bg-zinc-800 gap-1 group p-2">
         <div
           className="absolute top-5 right-5
@@ -108,6 +110,7 @@ export const SkillCard = (props) => {
           src={props.logo}
           width="45"
           height="45"
+          alt={props.skill}
         />
         <div
           className="absolute bottom-2 py-0.5 px-2 rounded-full border-1 text-opacity-0 border border-gray-500 border-opacity-10 rounded-xl"
@@ -134,12 +137,13 @@ export const WorkCard = (props) => {
   return (
     <div className="bg-gray-800 rounded-xl bg-gray shadow-md dark:bg-gray-100 dark:shadow-2xl mx-auto flex w-full max-w-4xl flex-col justify-between gap-8 p-8 md:flex-row md:gap-8 lg:gap-2 text-gray-300">
       <div className="justify-center text-center md:w-1/4 flex flex-row md:flex-col gap-4">
-        <a target="_blank" href={props.link}>
+        <a rel="noreferrer" target="_blank" href={props.link}>
           <img
             className="transition duration-300 hover:-translate-y-2"
             src={props.logo}
             width={150}
             height={150}
+            alt={props.company}
           ></img>
         </a>
       </div>
@@ -160,7 +164,7 @@ export function useScroll() {
 
   const onScroll = useCallback(() => {
     setScrolled(window.scrollY > 80);
-  }, [80]);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);

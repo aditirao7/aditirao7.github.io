@@ -14,16 +14,17 @@ const Navigation = () => {
       }
     >
       <div className="relative flex mx-auto justify-between max-w-xl p-5">
-        {navData.map((obj) => (
+        {navData.map((obj, index) => (
           <NavItem
             href={obj.href}
             content={obj.content}
             icon={obj.icon}
+            key={`contact-` + index}
           ></NavItem>
         ))}
         <div className="relative p-1">|</div>
         <div className="relative transition duration-300 hover:scale-110 bg-gray-50 text-gray-900 px-5 py-1 justify-center align-center rounded-xl">
-          <a target="_blank" href={Resume}>
+          <a rel="noreferrer" target="_blank" href={Resume}>
             View CV
           </a>
         </div>

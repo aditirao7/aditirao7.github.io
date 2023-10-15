@@ -12,7 +12,7 @@ const Projects = () => {
     >
       <Title content="Projects"></Title>
       <Grid grid="lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 gap-y-4 ">
-        {projectsData.map((obj) => (
+        {projectsData.map((obj, index) => (
           <ProjectCard
             link={obj.href}
             pic={obj.picture}
@@ -21,6 +21,7 @@ const Projects = () => {
             round={obj.round}
             size={obj.size}
             animate={obj.animate}
+            key={`project-` + index}
           ></ProjectCard>
         ))}
       </Grid>
