@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import { Script } from "gatsby";
 
 export default function HTML(props) {
   return (
@@ -17,6 +18,25 @@ export default function HTML(props) {
           rel="stylesheet"
         />
         {props.headComponents}
+        <Script>
+          {`
+          var _paq = (window._paq = window._paq || []);
+          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          _paq.push(["trackPageView"]);
+          _paq.push(["enableLinkTracking"]);
+          (function () {
+            var u = "https://aditirao7.matomo.cloud/";
+            _paq.push(["setTrackerUrl", u + "matomo.php"]);
+            _paq.push(["setSiteId", "1"]);
+            var d = document,
+              g = d.createElement("script"),
+              s = d.getElementsByTagName("script")[0];
+            g.async = true;
+            g.src = "//cdn.matomo.cloud/aditirao7.matomo.cloud/matomo.js";
+            s.parentNode.insertBefore(g, s);
+          })();
+        `}
+        </Script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
