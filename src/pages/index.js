@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Projects from "../components/Project";
 import "../css/output.css";
+import { Script } from "gatsby";
 
 const IndexPage = () => {
   return (
