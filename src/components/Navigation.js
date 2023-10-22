@@ -23,7 +23,7 @@ const Navigation = () => {
           ></NavItem>
         ))}
         <div className="relative p-1">|</div>
-        <div className="relative transition duration-300 hover:scale-110 bg-gray-50 text-gray-900 px-5 py-1 justify-center align-center rounded-xl">
+        <div className="relative transition duration-300 hover:scale-110 bg-gray-50 text-gray-900 px-3 py-1 my-auto justify-center align-center rounded-md text-sm">
           <a rel="noreferrer" target="_blank" href={Resume}>
             View CV
           </a>

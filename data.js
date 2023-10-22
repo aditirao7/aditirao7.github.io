@@ -6,6 +6,7 @@ import {
   Linkedin,
   Mail,
   Phone,
+  Newspaper,
 } from "lucide-react";
 import picture1 from "./src/images/picture1.jpg";
 import picture2 from "./src/images/picture2.jpg";
@@ -306,22 +307,27 @@ export const contactData = {
 
 export const navData = [
   {
-    href: "#top",
+    href: "/#top",
     content: "Home",
     icon: Home,
   },
   {
-    href: "#about",
+    href: "/#about",
     content: "About",
     icon: Contact2,
   },
   {
-    href: "#work",
+    href: "/#work",
     content: "Work",
     icon: Briefcase,
   },
   {
-    href: "#contact",
+    href: "/blog",
+    content: "Blog",
+    icon: Newspaper,
+  },
+  {
+    href: "/#contact",
     content: "Contact",
     icon: Phone,
   },

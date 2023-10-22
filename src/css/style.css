@@ -8,13 +8,23 @@ html {
   -moz-user-select: none; /* firefox specific */
   -webkit-user-select: none; /* Chrome, Opera and Safari*/
   -ms-user-select: none; /* IE, ms-edge */
+  -webkit-font-smoothing: subpixel-antialiased;
+  transform: perspective(1px) translateZ(0);
+  backface-visibility: hidden;
 }
 
 body {
   font-family: Inter;
-  margin: 0px;
+  background-color: #111827;
+  margin-bottom: -25px;
 }
 
 section {
   scroll-margin-top: 80px;
 }
+
+#blog {
+  position: relative;
+  min-height: calc(100vh - 136px);
+}
+

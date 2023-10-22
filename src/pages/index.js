@@ -7,6 +7,7 @@ import Work from "../components/Work";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Projects from "../components/Project";
+import { projectsData } from "../../data.js";
 import "../css/output.css";
 import { Script } from "gatsby";
 
@@ -37,7 +38,7 @@ const IndexPage = () => {
       <About></About>
       <Skills></Skills>
       <Work></Work>
-      <Projects></Projects>
+      <Projects data={projectsData}></Projects>
       <Contact></Contact>
       <Footer></Footer>
     </main>

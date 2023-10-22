@@ -159,6 +159,42 @@ export const WorkCard = (props) => {
   );
 };
 
+export const BlogCard = (props) => {
+  return (
+    <a rel="noreferrer" target="_blank" href={props.link}>
+      <div className="relative text-gray-300 bg-gray-900 rounded-xl flex flex-col border border-gray-500 border-opacity-10 transition duration-300 hover:-translate-y-1 gap-1 group p-2">
+        <img
+          src={props.img}
+          width={260}
+          height={240}
+          alt={props.title}
+          className="rounded-xl p-1"
+        />
+        <span className="font-bold text-xl px-2">{props.title}</span>
+        <span className=" italic text-sm px-2 py-2">
+          {props.date.toLocaleString("default", { month: "long" }) +
+            " " +
+            props.date.getDate() +
+            ", " +
+            props.date.getFullYear()}
+        </span>
+        <div className="flex flex-row gap-2 px-2 py-1">
+          {props.tags.map((obj, index) => (
+            <div
+              key={`tag-` + index}
+              className="flex bg-[#1B1E34] rounded-md py-1 px-5"
+            >
+              <p className="text-[#4B6BFB] font-medium text-sm text-normal">
+                {obj}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </a>
+  );
+};
+
 export function useScroll() {
   const [scrolled, setScrolled] = useState(false);
 
