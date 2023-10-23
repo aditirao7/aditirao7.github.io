@@ -20,10 +20,10 @@ const Blog = () => {
   return (
     <div
       id="blog"
-      className="px-9 sm:px-9 md:px-28 lg:px-36 py-9 md:py-20 2xl:py-20  bg-gray-900"
+      className="px-9 sm:px-9 md:px-28 lg:px-36 2xl:px-48 py-9 sm:py-16 md:py-20 bg-gray-900"
     >
-      <div className="flex items-center justify-center pb-10 text-gray-50 text-2xl sm:text-3xl font-semibold md:font-bold md:text-4xl lg:text-5xl">
-        <span>📚 Techtangles and Tangents 📚</span>
+      <div className="blog-title flex items-center justify-center pb-10 text-gray-50 text-2xl sm:text-3xl font-semibold md:font-bold md:text-4xl lg:text-5xl">
+        <span>📚 Techtangles and Tangents</span>
       </div>
       <Grid grid="mx-auto md:mx-0 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 gap-y-4">
         {blogs.map((obj, index) => (

@@ -1147,6 +1147,10 @@ section {
   min-height: calc(100vh - 136px);
 }
 
+.blog-title {
+  font-size: 5.5vw;
+}
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1234,6 +1238,11 @@ section {
   .sm\:px-9 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .sm\:text-3xl {
@@ -1433,9 +1442,13 @@ section {
     gap: 3rem;
   }
 
+  .\32xl\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
   .\32xl\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
-

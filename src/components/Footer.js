@@ -4,7 +4,7 @@ import { Section } from "./Layout";
 const Footer = () => {
   return (
     <Section id="footer" padding="py-5" gap="gap-12" bg="bg-gray-950">
-      <span>
+      <span className="text-sm">
         2023 |{"  "}
         <a
           className="underline underline-offset-4"

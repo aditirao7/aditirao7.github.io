@@ -28,3 +28,6 @@ section {
   min-height: calc(100vh - 136px);
 }
 
+.blog-title {
+  font-size: 5.5vw;
+}
