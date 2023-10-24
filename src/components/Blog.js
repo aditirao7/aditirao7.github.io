@@ -25,7 +25,7 @@ const Blog = () => {
       <div className="blog-title flex items-center justify-center pb-10 text-gray-50 text-2xl sm:text-3xl font-semibold md:font-bold md:text-4xl lg:text-5xl">
         <span>📚 Techtangles and Tangents</span>
       </div>
-      <Grid grid="mx-auto md:mx-0 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 gap-y-4">
+      <Grid grid="mx-auto md:mx-0 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
         {blogs.map((obj, index) => (
           <BlogCard
             img={obj.thumbnail}

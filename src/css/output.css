@@ -1151,6 +1151,15 @@ section {
   font-size: 5.5vw;
 }
 
+.blog-card {
+  max-width: 280px;
+}
+
+.blog-card > img {
+  max-width: 100%;
+  height: 140px;
+}
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
