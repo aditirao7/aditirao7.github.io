@@ -1,5 +1,4 @@
 import * as React from "react";
-import Resume from "../files/Aditi_Rao_Resume.pdf";
 import { NavItem, useScroll } from "./Layout";
 import { navData } from "../../data";
 
@@ -24,7 +23,11 @@ const Navigation = () => {
         ))}
         <div className="relative p-1">|</div>
         <div className="relative transition duration-300 hover:scale-110 bg-gray-50 text-gray-900 px-3 py-1 my-auto justify-center align-center rounded-md text-sm">
-          <a rel="noreferrer" target="_blank" href={Resume}>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://drive.google.com/file/d/1f9njxRq8K24PYyzuFmhNeWlRUCp2-2kB/view?usp=sharing"
+          >
             View CV
           </a>
         </div>
