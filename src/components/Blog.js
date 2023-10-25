@@ -15,6 +15,7 @@ const Blog = () => {
       .then((data) => {
         if (data.status === "ok") {
           setBlogs([...data.items]);
+          setIsLoaded(true);
         }
       });
   }, []);
