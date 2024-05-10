@@ -26,7 +26,7 @@ const Navigation = () => {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://drive.google.com/file/d/1f9njxRq8K24PYyzuFmhNeWlRUCp2-2kB/view?usp=sharing"
+            href="https://bit.ly/4dCBYFt"
           >
             View CV
           </a>
