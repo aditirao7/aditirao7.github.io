@@ -36,6 +36,7 @@ import opencv from "./src/images/opencv.png";
 import django from "./src/images/django.png";
 import amazon from "./src/images/amazon.png";
 import fasthr from "./src/images/fasthr.png";
+import akamai from "./src/images/akamai.png";
 import rover from "./src/images/rover.gif";
 import rotting from "./src/images/rotting.gif";
 import music from "./src/images/music1.gif";
@@ -48,7 +49,7 @@ export const introData = {
   headline:
     "I'm a software developer with a keen interest in Robotics and Artificial Intelligence. I thrive on continuous learning and embracing new skills as a means to grow personally and professionally. I have a passion for solving complex problems and creating user-friendly software.",
   location: "Bangalore, India",
-  status: "Available for full-time roles",
+  status: "SDE @ Amazon",
   picture: picture1,
   socials: [
     {
@@ -73,7 +74,7 @@ export const aboutData = {
   content: [
     "I'm a Computer Science graduate from Manipal Institute of Technology. My academic journey was enriched by a minor in Big Data Analytics, which deepened my understanding of Artificial Intelligence and data-driven solutions.",
     "The most exhilarating part of my college experience was my involvement with the Mars Rover Manipal team during my initial two years. It was a transformative experience where I contributed to the development of autonomous algorithms for various robotic systems. My responsibilities included creating algorithms for obstacle avoidance, navigation search strategies, and object detection. This hands-on experience instilled problem-solving skills and honed my technical prowess. I kicked off my professional career with a dynamic startup called FastHr.ai and later embarked on a comprehensive six-month internship at Amazon. These experiences further expanded my skill set and provided insights into the corporate landscape.",
-    "Currently, I'm immersed in the realm of freelancing, working on a variety of projects that continually challenge and inspire me. While I enjoy the flexibility of freelancing, I remain open to exploring full-time opportunities in software development. If you have a project that aligns with my skill set, let's connect!",
+    "Currently, I'm working at Amazon as a full-time software engineer, working on a variety of projects that continually challenge and inspire me. This role was offered to me in May 2024 as a return offer after my internship. It came right after a brief but fulfilling stint with Akamai Technologies.",
     "Beyond my professional endeavors, I enjoy swimming and playing badminton. I also really enjoy watching cricket with my dad. I'm an avid reader and one may often find me curled up in a corner immersed in a book. Another significant part of my life is music, having devoted a decade to training in Hindustani Classical Music.",
     "As a woman in tech, I'm committed to breaking the glass ceiling in this male-dominated field. I aim to use this website as a platform to document my journey as I navigate the ever-evolving landscape of technology. But this website isn't just about tech; it's a canvas for my thoughts and experiences. You may find random memory dumps and musings on my blog soon.",
   ],
@@ -204,16 +205,30 @@ export const skillsData = [
 
 export const workData = [
   {
+    title: "Software Engineer",
+    logo: akamai,
+    duration: "Dec 2023 - May 2024",
+    href: "https://www.akamai.com/",
+    company: "Akamai Technologies",
+    points: [
+      "Designed and deployed a Pytest and Jenkins-based checklist automation framework to test and verify APIs post deployment, slashing manual effort by 7 hours per release cycle.",
+      "Enhanced alert efficacy by recalibrating parameters for two critical applications, identifying and rectifying an error misreporting issue, which notably reduced noise levels by 90% and bolstered system responsiveness.",
+      "Oversaw deployments for three major edge applications in the Akamai CDN, ensuring seamless media delivery for high-profile sporting events like IPL and SuperBowl live streams.",
+    ],
+  },
+  {
     title: "Software Development Intern",
     logo: amazon,
     duration: "Jan 2023 - June 2023",
     href: "https://amazon.com/",
     company: "Amazon",
     points: [
-      "Spearheaded the successful integration of Pix payment method for Amazon subscriptions in Brazil. It will be the main driver for attracting up to 2 million new customers and generating a revenue of around $72 million.",
-      "Established and hosted a SonarQube instance using AWS and designed an automation system to integrate analysis into the internal pull request workflow.",
-      "Orchestrated real-time log analysis for our API service using Google Guice to enable efficient debugging.",
-      "Integrated AWS CloudWatch RUM in our application using SpringBoot and JSP for logging client side metrics, latency metrics and gaining actionable customer insights.",
+      "Spearheaded the successful integration of Pix payment method for Amazon subscriptions in Brazil, showcasing proficiency in SpringBoot. Pix will be the main driver for attracting up to 2 million new customers and generating a revenue of $72 million.",
+      "Executed a robust testing strategy, with comprehensive unit and integration tests, ensuring end-to-end functionality and an enhanced customer experience. Also successfully executed 2 A/B tests by closely monitoring failure metrics.",
+      "Collaborated across 3 cross-functional teams to meet all technical and business requirements.",
+      "Deployed an AWS based SonarQube instance and integrated it with the code review workflow using Python and Bash scripting. The system detected 48,000+ code issues and improved code quality and review efficiency.",
+      "Orchestrated real-time log analysis for our API service using Guice and SpringBoot to enable efficient debugging, resulting in a 90% decrease in the time taken for root cause analysis of issues for our team as well as client teams.",
+      "Integrated AWS CloudWatch RUM in our application with SpringBoot and JSP for client-side metrics, resulting in the resolution of 80% of previously unsolvable client-side issues along with providing valuable insights about the customers.",
     ],
   },
   {
@@ -223,8 +238,8 @@ export const workData = [
     href: "https://fasthr.ai/",
     company: "FastHr.ai",
     points: [
-      "Engineered an internal tool utilizing HTML, JQuery, and Google Apps Script. Generated digitally signed invoice PDFs, complete with secure digital signatures, dates, and unique IDs. Streamlined data management by seamlessly updating pertinent information in an Excel sheet.",
-      "Drove the backend development of a dynamic Applicant Tracking System (ATS) powered by Node.js, Express, and MongoDB. Contributed to the design and implementation of RESTful APIs and skillfully integrated Sarv's third-party API, enabling seamless communication between recruiters and candidates.",
+      "Engineered an internal tool utilizing HTML, JQuery, and Google Apps Script that resulted in a 70% decrease in invoice processing time. Generated digitally signed invoice PDFs, complete with secure digital signatures, dates, and unique IDs.",
+      "Collaborated on backend development of an Applicant Tracking System (ATS) powered by Node.js, Express, and MongoDB which boosted recruiter productivity by 30%. Contributed to the design and implementation of RESTful APIs and also integrated Sarv's third-party API, enabling seamless communication between recruiters and candidates.",
     ],
   },
 ];
